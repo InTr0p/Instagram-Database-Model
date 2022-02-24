@@ -39,6 +39,7 @@ class post(Base):
     street_name = Column(String(250))
     street_number = Column(String(250))
     post_code = Column(String(250), nullable=False)
+    location_in_coordinates = Column(String(250))
     user_id = Column(Integer, ForeignKey('user.id'))
 
 
